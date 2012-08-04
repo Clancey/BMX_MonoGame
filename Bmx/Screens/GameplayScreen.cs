@@ -23,7 +23,7 @@ namespace GameStateManagement
     /// placeholder to get the idea across: you'll probably want to
     /// put some more interesting gameplay in here!
     /// </summary>
-    class GameplayScreen : GameScreen
+    public class GameplayScreen : GameScreen
     {
         #region Fields
 
@@ -47,7 +47,7 @@ namespace GameStateManagement
         /// </summary>
         public GameplayScreen()
         {
-            TransitionOnTime = TimeSpan.FromSeconds(1.5);
+            TransitionOnTime = TimeSpan.FromSeconds(0.0);
             TransitionOffTime = TimeSpan.FromSeconds(0.5);
         }
 

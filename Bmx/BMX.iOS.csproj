@@ -95,6 +95,7 @@
     <Folder Include="SVG\" />
     <Folder Include="AI\" />
     <Folder Include="Animals\" />
+    <Folder Include="Physics\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
@@ -134,9 +135,6 @@
     <Compile Include="SVG\SvgLineSegment.cs" />
     <Compile Include="SVG\SvgQuadraticCurveSegment.cs" />
     <Compile Include="SVG\SvgTextReader.cs" />
-    <None Include="bike-frame.svg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <Compile Include="AI\AIParameters.cs" />
     <Compile Include="AI\Flock.cs" />
     <Compile Include="AI\Behaviors\AlignBehavior.cs" />
@@ -150,6 +148,9 @@
     <Compile Include="Animals\AnimalState.cs" />
     <Compile Include="Animals\AnimalType.cs" />
     <Compile Include="Animals\Follower.cs" />
+    <Compile Include="Physics\Ragdoll.cs" />
+    <Compile Include="Physics\Sprite.cs" />
+    <Compile Include="Physics\Bike.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GameThumbnail.png" />
@@ -172,6 +173,9 @@
     </Content>
     <Content Include="Content\mouse.png" />
     <Content Include="Content\menufont.iOS.xnb" />
+    <Content Include="bike-frame.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -185,6 +189,10 @@
     <ProjectReference Include="..\Frameworks\MonoGame\MonoGame.Framework\MonoGame.Framework.iOS.csproj">
       <Project>{DB8508BB-9849-4CC2-BC0F-8EB5DACB3C47}</Project>
       <Name>MonoGame.Framework.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Frameworks\FarseerPhysics\SourceFiles\Farseer Physics XNA IOS.csproj">
+      <Project>{7CBCF359-9701-4CC5-BB5D-1A15A539EDA5}</Project>
+      <Name>Farseer Physics XNA IOS</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
