@@ -41,6 +41,12 @@ namespace GameStateManagement
         bool isInitialized;
 
         bool traceEnabled;
+		
+#if IPHONE
+		public float ScreenScale =  MonoTouch.UIKit.UIScreen.MainScreen.Scale;
+#else
+		public float ScreenScale = 1f;
+#endif
 
         #endregion
 

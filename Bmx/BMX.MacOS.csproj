@@ -107,6 +107,7 @@
     <Compile Include="Animals\AnimalState.cs" />
     <Compile Include="Animals\AnimalType.cs" />
     <Compile Include="Animals\Follower.cs" />
+    <Compile Include="Screens\TestScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />

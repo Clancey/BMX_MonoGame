@@ -36,9 +36,9 @@ namespace GameStateManagement
         private Sprite _lowerLeg;
 
 
-        private GameplayScreen _screen;
+		private GameScreen _screen;
 
-        public Ragdoll(World world,  GameplayScreen screen, Vector2 position)
+		public Ragdoll(World world,  GameScreen screen, Vector2 position)
         {
             CreateBody(world, position);
             CreateJoints(world);

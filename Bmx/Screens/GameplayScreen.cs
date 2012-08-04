@@ -5,6 +5,10 @@
 // Microsoft XNA Community Game Platform
 // Copyright (C) Microsoft Corporation. All rights reserved.
 //-----------------------------------------------------------------------------
+using FarseerPhysics.Dynamics;
+using FarseerPhysics.DebugViews;
+
+
 #endregion
 
 #region Using Statements
@@ -26,13 +30,12 @@ namespace GameStateManagement
     public class GameplayScreen : GameScreen
     {
         #region Fields
-
+		
+		private const float Scale = 300f;
         ContentManager content;
         SpriteFont gameFont;
-
-        Vector2 playerPosition = new Vector2(100, 100);
-        Vector2 enemyPosition = new Vector2(100, 100);
-
+		private World _world;
+		DebugViewXNA DebugView;
         Random random = new Random();
 
         float pauseAlpha;
@@ -60,8 +63,19 @@ namespace GameStateManagement
             if (content == null)
                 content = new ContentManager(ScreenManager.Game.Services, "Content");
 
-            gameFont = content.Load<SpriteFont>("gamefont");
+			_world = new World(new Vector2(0,6));
+			
+			DebugView = new DebugViewXNA(_world);
+			DebugView.LoadContent(ScreenManager.GraphicsDevice,content);
 
+            gameFont = content.Load<SpriteFont>("gamefont");
+			
+			float simulatedHeight = Constants.FloorPosition.Y / Constants.Scale;
+			float simulatedWidth = Constants.WorldWidth;
+		var 	startPos = new Vector2 (1.5f, simulatedHeight - 1.5f);
+			var ragDoll = new Ragdoll(_world,this,startPos);
+			
+			//BodyFactory.CreateEdge (_world, new Vector2 (0.0f, simulatedHeight), new Vector2 (simulatedWidth* 2, simulatedHeight));
             // A real game would probably have more content than this sample, so
             // it would take longer to load. We simulate that by delaying for a
             // while, giving you a chance to admire the beautiful loading screen.
@@ -109,15 +123,6 @@ namespace GameStateManagement
                 // Apply some random jitter to make the enemy move around.
                 const float randomization = 10;
 
-                enemyPosition.X += (float)(random.NextDouble() - 0.5) * randomization;
-                enemyPosition.Y += (float)(random.NextDouble() - 0.5) * randomization;
-
-                // Apply a stabilizing force to stop the enemy moving off the screen.
-                Vector2 targetPosition = new Vector2(
-                    ScreenManager.GraphicsDevice.Viewport.Width / 2 - gameFont.MeasureString("Insert Gameplay Here").X / 2, 
-                    200);
-
-                enemyPosition = Vector2.Lerp(enemyPosition, targetPosition, 0.05f);
 
                 // TODO: this game isn't very fun! You could probably improve
                 // it by inserting something more interesting in this space :-)
@@ -176,7 +181,6 @@ namespace GameStateManagement
                 if (movement.Length() > 1)
                     movement.Normalize();
 
-                playerPosition += movement * 2;
             }
         }
 
@@ -193,13 +197,23 @@ namespace GameStateManagement
             // Our player and enemy are both actually just text strings.
             SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
 
-            spriteBatch.Begin();
-
+			spriteBatch.Begin (0, null, null, null, null, null, Camera.Current.TransformationMatrix);
+			/*
             spriteBatch.DrawString(gameFont, "// TODO", playerPosition, Color.Green);
 
             spriteBatch.DrawString(gameFont, "Insert Gameplay Here",
                                    enemyPosition, Color.DarkRed);
+*/
 
+			Matrix projection = Matrix.CreateOrthographicOffCenter(0f, ScreenManager.GraphicsDevice.Viewport.Width / Scale,
+			                                                       ScreenManager.GraphicsDevice.Viewport.Height / Scale, 0f, 0f,
+				                                                       1f);
+
+			
+			var view = Camera.Current.DebugView;
+			//Console.WriteLine(Camera.Current.CameraCenter/ Scale);
+			
+			DebugView.RenderDebugData(ref projection, ref view);
             spriteBatch.End();
 
             // If the game is transitioning on or off, fade it out to black.
