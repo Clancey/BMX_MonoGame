@@ -1,47 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   width="142.70122"
-   height="143.61346"
-   id="svg5246">
-  <defs
-     id="defs5248" />
-  <metadata
-     id="metadata5251">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     transform="translate(-354.38026,-431.98012)"
-     id="layer1">
-    <path
-       d="m 48.75,118.07775 a 23.214285,23.214285 0 1 1 -46.4285698,0 23.214285,23.214285 0 1 1 46.4285698,0 z"
-       transform="matrix(1.0923077,0,0,1.0923077,352.02312,421.08063)"
-       id="left-wheel"
-       style="opacity:0.60280379;color:#000000;fill:#ef2929;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       d="m 48.75,118.07775 a 23.214285,23.214285 0 1 1 -46.4285698,0 23.214285,23.214285 0 1 1 46.4285698,0 z"
-       transform="matrix(1.0923077,0,0,1.0923077,443.98741,421.08063)"
-       id="right-wheel"
-       style="opacity:0.60280379;color:#000000;fill:#ef2929;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       d="M 117.49641,118.07596 74.285714,97.899179 25.435268,118.07551 60.535714,115.57775"
-       transform="translate(354.38026,431.98012)"
-       id="main-frame"
-       style="fill:none;stroke:#cc0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg5246" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="142.701px"
+	 height="143.613px" viewBox="0 0 142.701 143.613" enable-background="new 0 0 142.701 143.613" xml:space="preserve">
+<g id="layer1" transform="translate(-354.38026,-431.98012)">
+	<path id="left-wheel" opacity="0.6028" fill="#EF2929" enable-background="new    " d="M405.273,550.058
+		c0,14.004-11.353,25.357-25.357,25.357s-25.357-11.354-25.357-25.357c0-14.005,11.353-25.357,25.357-25.357
+		S405.273,536.053,405.273,550.058z"/>
+	<path id="right-wheel" opacity="0.6028" fill="#EF2929" enable-background="new    " d="M497.237,550.058
+		c0,14.004-11.352,25.357-25.356,25.357s-25.356-11.354-25.356-25.357c0-14.005,11.352-25.357,25.356-25.357
+		S497.237,536.053,497.237,550.058z"/>
+	<path id="main-frame" fill="none" stroke="#CC0000" stroke-width="3" d="M471.877,550.056l-43.211-20.177l-48.851,20.177
+		l35.101-2.498"/>
+	<ellipse fill="#EF2929" cx="412.064" cy="491.953" rx="21.833" ry="21"/>
+</g>
 </svg>

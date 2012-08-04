@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame.Framework.MacOS", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lidgren.Network.MacOS", "Frameworks\MonoGame\ThirdParty\Lidgren.Network\Lidgren.Network.MacOS.csproj", "{AE483C29-042E-4226-BA52-D247CE7676DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bmx", "Bmx\Bmx.csproj", "{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMX.MacOS", "Bmx\BMX.MacOS.csproj", "{4AD6BC7A-DB9A-4A6F-9EE2-DAD9B0BBA2A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMX.iOS", "Bmx\BMX.iOS.csproj", "{B1A596F8-B26C-4826-99D1-94C9327AB586}"
@@ -80,18 +78,6 @@ Global
 		{7CBCF359-9701-4CC5-BB5D-1A15A539EDA5}.Release|iPhone.Build.0 = Release|iPhone
 		{7CBCF359-9701-4CC5-BB5D-1A15A539EDA5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{7CBCF359-9701-4CC5-BB5D-1A15A539EDA5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Debug|iPhone.Build.0 = Debug|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Release|iPhone.ActiveCfg = Release|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Release|iPhone.Build.0 = Release|iPhone
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{8BEEDC69-3B65-4CA3-A97F-EFBCF72F6200}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{AE483C29-042E-4226-BA52-D247CE7676DA}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
 		{AE483C29-042E-4226-BA52-D247CE7676DA}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
 		{AE483C29-042E-4226-BA52-D247CE7676DA}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
@@ -141,6 +127,6 @@ Global
 		{AE483C29-042E-4226-BA52-D247CE7676DA} = {AEE605EA-6BC8-4E66-BE7D-FC6AE87882A9}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Bmx\Bmx.csproj
+		StartupItem = Bmx\BMX.iOS.csproj
 	EndGlobalSection
 EndGlobal
