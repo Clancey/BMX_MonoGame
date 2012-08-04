@@ -153,7 +153,9 @@
     <Compile Include="Physics\Bike.cs" />
     <Compile Include="Physics\Ragdoll.cs" />
     <Compile Include="Physics\Sprite.cs" />
-    <Compile Include="Physics\Terrain.cs" />
+    <Compile Include="Screens\TestScreen.cs" />
+    <Compile Include="Screens\Constants.cs" />
+    <Compile Include="Screens\Camera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GameThumbnail.png" />
@@ -199,6 +201,10 @@
     <ProjectReference Include="..\Frameworks\FarseerPhysics\SourceFiles\Farseer Physics XNA IOS.csproj">
       <Project>{7CBCF359-9701-4CC5-BB5D-1A15A539EDA5}</Project>
       <Name>Farseer Physics XNA IOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Frameworks\DebugView XNA\DebugViewMonoGameIos.csproj">
+      <Project>{91DB554B-E707-491B-AF73-D173A8374E8F}</Project>
+      <Name>DebugViewMonoGameIos</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
