@@ -12,31 +12,31 @@
     <AssemblyName>GameStateManagement</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>True</DebugSymbols>
+    <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>False</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;MONOMAC</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>False</ConsolePause>
-    <EnableCodeSigning>False</EnableCodeSigning>
-    <CreatePackage>False</CreatePackage>
-    <EnablePackageSigning>False</EnablePackageSigning>
-    <IncludeMonoRuntime>False</IncludeMonoRuntime>
+    <ConsolePause>false</ConsolePause>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>false</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
-    <Optimize>False</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>False</ConsolePause>
+    <ConsolePause>false</ConsolePause>
     <DefineConstants>MONOMAC</DefineConstants>
-    <EnableCodeSigning>False</EnableCodeSigning>
-    <CreatePackage>False</CreatePackage>
-    <EnablePackageSigning>False</EnablePackageSigning>
-    <IncludeMonoRuntime>False</IncludeMonoRuntime>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>false</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -76,11 +76,30 @@
     <Compile Include="Screens\PauseMenuScreen.cs" />
     <Compile Include="Screens\PlayerIndexEventArgs.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="SVG\Basic Shapes\SvgVisualElement.cs" />
+    <Compile Include="SVG\Basic Shapes\SvgVisualElementStyle.cs" />
+    <Compile Include="SVG\SvgArcSegment.cs" />
+    <Compile Include="SVG\SvgAttributeAttribute.cs" />
+    <Compile Include="SVG\SvgAttributeCollection.cs" />
+    <Compile Include="SVG\SvgClosePathSegment.cs" />
+    <Compile Include="SVG\SvgCubicCurveSegment.cs" />
+    <Compile Include="SVG\SvgElement.cs" />
+    <Compile Include="SVG\SvgElementAttribute.cs" />
+    <Compile Include="SVG\SvgElementCollection.cs" />
+    <Compile Include="SVG\SvgLineSegment.cs" />
+    <Compile Include="SVG\SvgMoveToSegment.cs" />
+    <Compile Include="SVG\SvgPath.cs" />
+    <Compile Include="SVG\SvgPathBuilder.cs" />
+    <Compile Include="SVG\SvgPathSegment.cs" />
+    <Compile Include="SVG\SvgPathSegmentList.cs" />
+    <Compile Include="SVG\SvgQuadraticCurveSegment.cs" />
+    <Compile Include="SVG\SvgTextReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="ScreenManager\" />
     <Folder Include="Screens\" />
+    <Folder Include="SVG\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\background.xnb" />
@@ -88,6 +107,9 @@
     <Content Include="Content\gamefont.xnb" />
     <Content Include="Content\gradient.xnb" />
     <Content Include="Content\menufont.xnb" />
+    <Content Include="bike-frame.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Frameworks\MonoGame\MonoGame.Framework\MonoGame.Framework.MacOS.csproj">

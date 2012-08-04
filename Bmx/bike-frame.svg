@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg5246" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="142.701px"
+	 height="143.613px" viewBox="0 0 142.701 143.613" enable-background="new 0 0 142.701 143.613" xml:space="preserve">
+<g id="layer1" transform="translate(-354.38026,-431.98012)">
+	<path id="left-wheel" opacity="0.6028" fill="#EF2929" enable-background="new    " d="M405.273,550.058
+		c0,14.004-11.353,25.357-25.357,25.357s-25.357-11.354-25.357-25.357c0-14.005,11.353-25.357,25.357-25.357
+		S405.273,536.053,405.273,550.058z"/>
+	<path id="right-wheel" opacity="0.6028" fill="#EF2929" enable-background="new    " d="M497.237,550.058
+		c0,14.004-11.352,25.357-25.356,25.357s-25.356-11.354-25.356-25.357c0-14.005,11.352-25.357,25.356-25.357
+		S497.237,536.053,497.237,550.058z"/>
+	<path id="main-frame" fill="none" stroke="#CC0000" stroke-width="3" d="M471.877,550.056l-43.211-20.177l-48.851,20.177
+		l35.101-2.498"/>
+	<ellipse fill="#EF2929" cx="412.064" cy="491.953" rx="21.833" ry="21"/>
+</g>
+</svg>
