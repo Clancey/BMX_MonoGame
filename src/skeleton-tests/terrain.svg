@@ -15,7 +15,7 @@
    id="svg9714"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="New document 53">
+   sodipodi:docname="terrain.svg">
   <defs
      id="defs9716">
     <linearGradient
@@ -39,16 +39,6 @@
          offset="1"
          id="stop6400" />
     </linearGradient>
-    <linearGradient
-       gradientTransform="translate(-7.0000233,-530.00006)"
-       y2="1099.3545"
-       x2="91"
-       y1="1576.542"
-       x1="91"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient9737"
-       xlink:href="#linearGradient6396"
-       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -57,9 +47,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25"
-     inkscape:cx="217.79496"
-     inkscape:cy="233.11711"
+     inkscape:zoom="2"
+     inkscape:cx="406.25817"
+     inkscape:cy="223.52355"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -97,9 +87,26 @@
     <path
        style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="M 720,430 593.57143,412.85714 486.42857,371.42857 483.57143,319.28571 462.85714,280.71429 361.42857,294.28571 292.14286,272.85714 213.57143,197.14286 0,161.42857 0,480 l 720,0 z"
-       id="path10282"
+       id="12344"
        inkscape:connector-curvature="0"
        transform="translate(0,572.36218)"
-       sodipodi:nodetypes="cccccccccccc" />
+       sodipodi:nodetypes="cccccccccccc"
+       inkscape:label="ground" />
+    <rect
+       style="color:#000000;fill:#3465a4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect10313"
+       width="28"
+       height="28"
+       x="410"
+       y="821.86218"
+       inkscape:label="rock" />
+    <rect
+       y="833.86218"
+       x="359.5"
+       height="28"
+       width="28"
+       id="rect10315"
+       style="color:#000000;fill:#3465a4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:label="rock" />
   </g>
 </svg>
