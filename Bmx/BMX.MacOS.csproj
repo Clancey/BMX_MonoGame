@@ -54,7 +54,9 @@
     <None Include="Content\gamefont.spritefont" />
     <None Include="Content\gradient.png" />
     <None Include="Content\menufont.spritefont" />
-    <None Include="Info.Mac.plist" />
+    <None Include="MacOS\Info.plist">
+      <Link>Info.plist</Link>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />

@@ -107,11 +107,12 @@
     <Compile Include="Screens\OptionsMenuScreen.cs" />
     <Compile Include="Screens\PauseMenuScreen.cs" />
     <Compile Include="Screens\PlayerIndexEventArgs.cs" />
+    <None Include="iOS\Info.plist">
+      <Link>Info.plist</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="GameThumbnail.png" />
-    <None Include="Info.iOS.plist" />
-    <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\background.png">
