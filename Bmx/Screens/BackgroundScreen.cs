@@ -23,10 +23,51 @@ namespace GameStateManagement
     /// </summary>
     class BackgroundScreen : GameScreen
     {
+		 #region Constants
+
+        // X location to start drawing the HUD from        
+        const int hudLocX = 200;
+
+        // Y location to start drawing the HUD from
+        const int hudLocY = 30;
+
+        // Min value for the distance sliders
+        const float sliderMin = 0.0f;
+
+        // Max value for the distance sliders        
+        const float sliderMax = 100f;
+
+        // Width of the slider button
+        const int sliderButtonWidth = 10;
+
+        // Default value for the AI parameters
+        const float detectionDefault = 70.0f;
+        const float separationDefault = 50.0f;
+        const float moveInOldDirInfluenceDefault = 1.0f;
+        const float moveInFlockDirInfluenceDefault = 1.0f;
+        const float moveInRandomDirInfluenceDefault = 0.05f;
+        const float maxTurnRadiansDefault = 6.0f;
+        const float perMemberWeightDefault = 1.0f;
+        const float perDangerWeightDefault = 50.0f;
+        #endregion
+
         #region Fields
 
         ContentManager content;
-        Texture2D backgroundTexture;
+		SpriteBatch spriteBatch;
+
+		Texture2D backgroundTexture;
+
+		Texture2D onePixelWhite;
+
+        Texture2D birdTexture;
+
+        Flock flock;
+
+        AIParameters flockParams;
+
+		// Do we need to update AI parameers this Update
+        bool aiParameterUpdate = false;
 
         #endregion
 
@@ -40,6 +81,11 @@ namespace GameStateManagement
         {
             TransitionOnTime = TimeSpan.FromSeconds(0.5);
             TransitionOffTime = TimeSpan.FromSeconds(0.5);
+
+			flock = null;
+
+            flockParams = new AIParameters();
+            ResetAIParams();
         }
 
 
@@ -56,6 +102,13 @@ namespace GameStateManagement
                 content = new ContentManager(ScreenManager.Game.Services, "Content");
 
             backgroundTexture = content.Load<Texture2D>("background");
+
+			birdTexture = content.Load<Texture2D>("mouse");
+
+			onePixelWhite = new Texture2D(ScreenManager.GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
+            onePixelWhite.SetData<Color>(new Color[] { Color.White });
+
+			spriteBatch = ScreenManager.SpriteBatch;
         }
 
 
@@ -67,7 +120,34 @@ namespace GameStateManagement
             content.Unload();
         }
 
+		/// <summary>
+        /// Create the bird flock
+        /// </summary>
+        /// <param name="theNum"></param>
+        protected void SpawnFlock()
+        {
+            if (flock == null)
+            {
+                flock = new Flock(birdTexture, ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Width, 
+                                  ScreenManager.GraphicsDevice.Viewport.TitleSafeArea.Height, flockParams);
+            }
+        }
 
+
+		/// <summary>
+        /// Reset flock AI parameters
+        /// </summary>
+        private void ResetAIParams()
+        {
+            flockParams.DetectionDistance = detectionDefault;
+            flockParams.SeparationDistance = separationDefault;
+            flockParams.MoveInOldDirectionInfluence = moveInOldDirInfluenceDefault;
+            flockParams.MoveInFlockDirectionInfluence = moveInFlockDirInfluenceDefault;
+            flockParams.MoveInRandomDirectionInfluence = moveInRandomDirInfluenceDefault;
+            flockParams.MaxTurnRadians = maxTurnRadiansDefault;
+            flockParams.PerMemberWeight = perMemberWeightDefault;
+            flockParams.PerDangerWeight = perDangerWeightDefault;
+        }
         #endregion
 
         #region Update and Draw
@@ -83,6 +163,15 @@ namespace GameStateManagement
         public override void Update(GameTime gameTime, bool otherScreenHasFocus,
                                                        bool coveredByOtherScreen)
         {
+			if (flock != null)
+            {
+                flock.Update(gameTime);
+            }
+            else
+            {
+                SpawnFlock();
+            }
+
             base.Update(gameTime, otherScreenHasFocus, false);
         }
 
@@ -92,7 +181,6 @@ namespace GameStateManagement
         /// </summary>
         public override void Draw(GameTime gameTime)
         {
-            SpriteBatch spriteBatch = ScreenManager.SpriteBatch;
             Viewport viewport = ScreenManager.GraphicsDevice.Viewport;
             Rectangle fullscreen = new Rectangle(0, 0, viewport.Width, viewport.Height);
 
@@ -100,6 +188,11 @@ namespace GameStateManagement
 
             spriteBatch.Draw(backgroundTexture, fullscreen,
                              new Color(TransitionAlpha, TransitionAlpha, TransitionAlpha));
+
+			if (flock != null)
+            {
+                flock.Draw(spriteBatch, gameTime);
+            }
 
             spriteBatch.End();
         }

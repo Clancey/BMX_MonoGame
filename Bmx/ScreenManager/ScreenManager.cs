@@ -116,7 +116,11 @@ namespace GameStateManagement
             ContentManager content = Game.Content;
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            font = content.Load<SpriteFont>("menufont");
+#if IPHONE
+            font = content.Load<SpriteFont>("menufont.iOS");
+#else
+			font = content.Load<SpriteFont>("menufont.Mac");
+#endif
             blankTexture = content.Load<Texture2D>("blank");
 
             // Tell each of the screens to load their content.

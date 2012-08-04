@@ -76,6 +76,7 @@
     <Compile Include="Screens\PauseMenuScreen.cs" />
     <Compile Include="Screens\PlayerIndexEventArgs.cs" />
     <Compile Include="Program.cs" />
+<<<<<<< Updated upstream
     <Compile Include="SVG\Basic Shapes\SvgVisualElement.cs" />
     <Compile Include="SVG\Basic Shapes\SvgVisualElementStyle.cs" />
     <Compile Include="SVG\SvgArcSegment.cs" />
@@ -94,22 +95,47 @@
     <Compile Include="SVG\SvgPathSegmentList.cs" />
     <Compile Include="SVG\SvgQuadraticCurveSegment.cs" />
     <Compile Include="SVG\SvgTextReader.cs" />
+=======
+    <Compile Include="AI\AIParameters.cs" />
+    <Compile Include="AI\Flock.cs" />
+    <Compile Include="AI\Behaviors\AlignBehavior.cs" />
+    <Compile Include="AI\Behaviors\Behavior.cs" />
+    <Compile Include="AI\Behaviors\Behaviors.cs" />
+    <Compile Include="AI\Behaviors\CohesionBehavior.cs" />
+    <Compile Include="AI\Behaviors\FleeingBehavior.cs" />
+    <Compile Include="AI\Behaviors\FollowingBehavior.cs" />
+    <Compile Include="AI\Behaviors\SeparationBehavior.cs" />
+    <Compile Include="Animals\Animal.cs" />
+    <Compile Include="Animals\AnimalState.cs" />
+    <Compile Include="Animals\AnimalType.cs" />
+    <Compile Include="Animals\Follower.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="ScreenManager\" />
     <Folder Include="Screens\" />
+<<<<<<< Updated upstream
     <Folder Include="SVG\" />
+=======
+    <Folder Include="AI\" />
+    <Folder Include="Animals\" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\background.xnb" />
     <Content Include="Content\blank.xnb" />
     <Content Include="Content\gamefont.xnb" />
     <Content Include="Content\gradient.xnb" />
+<<<<<<< Updated upstream
     <Content Include="Content\menufont.xnb" />
     <Content Include="bike-frame.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+=======
+    <Content Include="Content\mouse.png" />
+    <Content Include="Content\menufont.Mac.xnb" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Frameworks\MonoGame\MonoGame.Framework\MonoGame.Framework.MacOS.csproj">

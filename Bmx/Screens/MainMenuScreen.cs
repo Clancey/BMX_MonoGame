@@ -28,19 +28,19 @@ namespace GameStateManagement
             : base("Main Menu")
         {
             // Create our menu entries.
-            MenuEntry playGameMenuEntry = new MenuEntry("Play Game");
-            MenuEntry optionsMenuEntry = new MenuEntry("Options");
-            MenuEntry exitMenuEntry = new MenuEntry("Exit");
+            MenuEntry playGameMenuEntry = new MenuEntry("Play");
+            //MenuEntry optionsMenuEntry = new MenuEntry("Options");
+            //MenuEntry exitMenuEntry = new MenuEntry("Exit");
 
             // Hook up menu event handlers.
             playGameMenuEntry.Selected += PlayGameMenuEntrySelected;
-            optionsMenuEntry.Selected += OptionsMenuEntrySelected;
-            exitMenuEntry.Selected += OnCancel;
+            //optionsMenuEntry.Selected += OptionsMenuEntrySelected;
+            //exitMenuEntry.Selected += OnCancel;
 
             // Add entries to the menu.
             MenuEntries.Add(playGameMenuEntry);
-            MenuEntries.Add(optionsMenuEntry);
-            MenuEntries.Add(exitMenuEntry);
+            //MenuEntries.Add(optionsMenuEntry);
+            //sMenuEntries.Add(exitMenuEntry);
         }
 
 
@@ -54,8 +54,11 @@ namespace GameStateManagement
         /// </summary>
         void PlayGameMenuEntrySelected(object sender, PlayerIndexEventArgs e)
         {
-            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex,
-                               new GameplayScreen());
+			// Tell all the current screens to transition off.
+            foreach (GameScreen screen in ScreenManager.GetScreens())
+                screen.ExitScreen();
+
+			ScreenManager.AddScreen(new GameplayScreen(), e.PlayerIndex);
         }
 
 
