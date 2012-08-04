@@ -73,6 +73,21 @@ namespace GameStateManagement
         /// </summary>
         public override void HandleInput(InputState input)
         {
+			var touch = input.TouchState;
+
+			var rect = new Rectangle(0,0,100,30);
+			if (touch.Count == 1 ) {
+				for (int i = 0; i < menuEntries.Count; i++){
+					rect.X = (int)menuEntries[i].Position.X;
+					rect.Y = (int)menuEntries[i].Position.Y;
+					selectedEntry = i;
+					if (rect.Contains((int)touch[0].Position.X, (int)touch[0].Position.Y)){
+						OnSelectEntry(selectedEntry, 0);
+						break;
+					}
+				}
+			}
+
             // Move to the previous menu entry?
             if (input.IsMenuUp(ControllingPlayer))
             {
