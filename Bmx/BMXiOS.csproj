@@ -95,6 +95,7 @@
     <Folder Include="SVG\" />
     <Folder Include="AI\" />
     <Folder Include="Animals\" />
+    <Folder Include="Physics\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
@@ -148,6 +149,9 @@
     <Compile Include="Animals\AnimalType.cs" />
     <Compile Include="Animals\Follower.cs" />
     <Compile Include="SVG\SvgParser.cs" />
+    <Compile Include="Physics\Bike.cs" />
+    <Compile Include="Physics\Ragdoll.cs" />
+    <Compile Include="Physics\Sprite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GameThumbnail.png" />
@@ -189,6 +193,10 @@
     <ProjectReference Include="..\Frameworks\MonoGame\MonoGame.Framework\MonoGame.Framework.iOS.csproj">
       <Project>{DB8508BB-9849-4CC2-BC0F-8EB5DACB3C47}</Project>
       <Name>MonoGame.Framework.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Frameworks\FarseerPhysics\SourceFiles\Farseer Physics XNA IOS.csproj">
+      <Project>{7CBCF359-9701-4CC5-BB5D-1A15A539EDA5}</Project>
+      <Name>Farseer Physics XNA IOS</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
