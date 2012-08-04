@@ -1,5 +1,12 @@
 #region Using Statements
 using System;
+using System.IO;
+using Svg;
+using System.Text;
+using System.Collections.Generic;
+using System.Xml;
+
+
 #if MONOMAC
 using MonoMac.AppKit;
 using MonoMac.Foundation;
@@ -53,6 +60,9 @@ namespace GameStateManagement
         GameStateManagementGame game;
         public override void FinishedLaunching(UIApplication app)
         {
+
+			SvgParser Parser = new SvgParser("terrain.svg");
+			Parser.Parse();
             // Fun begins..
             game = new GameStateManagementGame();
             game.Run();

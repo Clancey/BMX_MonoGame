@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lidgren.Network.MacOS", "Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMX.MacOS", "Bmx\BMX.MacOS.csproj", "{4AD6BC7A-DB9A-4A6F-9EE2-DAD9B0BBA2A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMX.iOS", "Bmx\BMX.iOS.csproj", "{B1A596F8-B26C-4826-99D1-94C9327AB586}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMXiOS", "Bmx\BMXiOS.csproj", "{B1A596F8-B26C-4826-99D1-94C9327AB586}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +127,6 @@ Global
 		{AE483C29-042E-4226-BA52-D247CE7676DA} = {AEE605EA-6BC8-4E66-BE7D-FC6AE87882A9}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Bmx\BMX.iOS.csproj
+		StartupItem = Bmx\BMXiOS.csproj
 	EndGlobalSection
 EndGlobal
