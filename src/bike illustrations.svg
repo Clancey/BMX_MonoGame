@@ -1260,11 +1260,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="6778.7189"
-     inkscape:cy="-305.0436"
+     inkscape:zoom="4"
+     inkscape:cx="-299.09971"
+     inkscape:cy="650.99107"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g7040"
      showgrid="false"
      showborder="false"
      showguides="true"
@@ -9407,9 +9407,7 @@
            style="fill:#000000;fill-opacity:1;stroke:none" />
       </g>
       <g
-         id="g7170"
-         transform="translate(-11,-30)"
-         style="fill:#000000;fill-opacity:1"
+         id="g7308"
          inkscape:export-filename="/Users/viniciusdepizzol/git/BMX/src/bike-parts/body.png"
          inkscape:export-xdpi="200.06"
          inkscape:export-ydpi="200.06">
@@ -9417,59 +9415,132 @@
            sodipodi:nodetypes="sssss"
            inkscape:connector-curvature="0"
            id="path7109"
-           d="m 205.37163,486.43211 c 5.3215,-9.31679 8.29093,-16.65844 12.53858,-28.3575 2.62648,-7.23396 -5.51375,-11.52612 -12.14214,-8.54593 -10.11996,4.55004 -12.84273,16.14185 -18.64518,26.64302 -4.36423,7.89831 12.96103,19.51805 18.24874,10.26041 z"
+           d="m 208.54278,456.75947 c 0.33189,-10.7243 -0.48763,-18.60122 -2.22122,-30.9262 -1.07194,-7.62099 -10.27441,-7.59536 -14.73169,-1.85518 -6.80521,8.76388 -3.77504,20.27916 -3.97641,32.27509 -0.15145,9.02258 20.59954,11.16251 20.92932,0.50629 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path7129"
+           d="m 187.63891,454.29714 c 0.006,0.65288 -0.0112,1.30157 -0.0222,1.95768 -0.15145,9.02258 20.59577,11.15273 20.92555,0.49651 0.0926,-2.9916 0.085,-5.7509 0.004,-8.45773 l -0.627,0.0852 -20.27991,5.91836 z"
+           style="fill:#000000;fill-opacity:1;stroke:none" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g7287"
+         transform="matrix(0.88326484,-0.46887443,0.46887443,0.88326484,-200.93034,123.4046)"
+         inkscape:export-filename="/Users/viniciusdepizzol/git/BMX/src/bike-parts/head.png"
+         inkscape:export-xdpi="200.06"
+         inkscape:export-ydpi="200.06">
         <path
            sodipodi:nodetypes="cccccccccc"
            inkscape:connector-curvature="0"
            id="path7119"
-           d="m 227.42885,434.50807 -0.35327,3.72337 1.5484,2.73771 -1.99604,0.55391 -0.15604,2.14218 -0.22295,2.08443 -7.44108,-2.33634 -1.83143,-9.5791 10.51408,-1.90009 z"
+           d="m 236.80633,416.84277 -0.35327,3.72337 1.5484,2.73771 -1.99604,0.55391 -0.15604,2.14218 -0.22295,2.08443 -7.44108,-2.33634 -1.83143,-9.5791 10.51408,-1.90009 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            sodipodi:nodetypes="ccccc"
            inkscape:connector-curvature="0"
            id="path7121"
-           d="m 217.42227,453.65534 c -0.17758,-1.30331 0.52317,-3.26691 1.75981,-5.63339 l -5.57243,-2.96048 c -1.25189,2.09717 -2.51527,4.16555 -4.42202,4.62632 z"
+           d="m 226.79975,435.99004 c -0.17758,-1.30331 0.52317,-3.26691 1.75981,-5.63339 l -5.57243,-2.96048 c -1.25189,2.09717 -2.51527,4.16555 -4.42202,4.62632 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            sodipodi:nodetypes="ccccccccc"
            inkscape:connector-curvature="0"
            id="path7123"
-           d="m 227.58273,435.75014 -0.37791,2.53448 -3.39798,-0.18916 0.0428,-0.56624 -2.62897,-0.10057 0.55867,-1.15801 2.16459,0.0136 0.0537,-0.70954 z"
+           d="m 236.96021,418.08484 -0.37791,2.53448 -3.39798,-0.18916 0.0428,-0.56624 -2.62897,-0.10057 0.55867,-1.15801 2.16459,0.0136 0.0537,-0.70954 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            sodipodi:nodetypes="ccsccccc"
            inkscape:connector-curvature="0"
            id="path7125"
-           d="M 225.45712,449.60731 211.9936,446.8434 c -6.41006,-6.63041 -2.07753,-16.84421 2.22955,-18.90238 10.345,-4.94342 15.28069,3.93078 25.58098,1.84998 -4.27042,10.16184 -19.92855,-3.26293 -18.38818,12.93906 l 7.07762,1.5773 1.10424,-1.51589 c 2.99059,2.04644 -0.27743,7.59108 -4.14069,6.81584 z"
-           style="fill:#000000;fill-opacity:1;stroke:none" />
-        <path
-           inkscape:connector-curvature="0"
-           id="path7129"
-           d="m 188.0625,474.45593 c -0.30065,0.57956 -0.62013,1.14439 -0.9375,1.71875 -4.36423,7.89831 12.96229,19.50764 18.25,10.25 1.48446,-2.59897 2.77154,-5.03971 3.96875,-7.46875 l -0.59375,-0.21875 -20.6875,-4.28125 z"
+           d="m 234.8346,431.94201 -13.46352,-2.76391 c -6.41006,-6.63041 -2.07753,-16.84421 2.22955,-18.90238 10.345,-4.94342 15.28069,3.93078 25.58098,1.84998 -4.27042,10.16184 -19.92855,-3.26293 -18.38818,12.93906 l 7.07762,1.5773 1.10424,-1.51589 c 2.99059,2.04644 -0.27743,7.59108 -4.14069,6.81584 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            inkscape:connector-curvature="0"
            id="path7135"
-           d="m 228.50676,444.72551 -7.09375,-1.5625 -0.15625,0.8125 7.09375,1.5 z"
-           style="fill:#000000;stroke:none;fill-opacity:1" />
+           d="m 237.88424,427.06021 -7.09375,-1.5625 -0.15625,0.8125 7.09375,1.5 z"
+           style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            sodipodi:nodetypes="cccc"
            inkscape:connector-curvature="0"
            id="path7137"
-           d="m 229.25676,429.28801 c -4.14836,-1.0659 -8.03944,-3.05801 -12.96875,-1.3125 -3.92252,1.3747 -5.02435,4.07678 -6.1875,6.75 3.36968,-8.3367 11.7903,-5.71311 19.15625,-5.4375 z"
+           d="m 238.63424,411.62271 c -4.14836,-1.0659 -8.03944,-3.05801 -12.96875,-1.3125 -3.92252,1.3747 -5.02435,4.07678 -6.1875,6.75 3.36968,-8.3367 11.7903,-5.71311 19.15625,-5.4375 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            sodipodi:nodetypes="ccc"
            inkscape:connector-curvature="0"
            id="path7139"
-           d="m 238.88176,430.44426 c -0.80021,1.58936 -2.30632,2.41851 -4.1875,2.84375 1.83391,-1.07919 2.71205,-1.60319 4.1875,-2.84375 z"
+           d="m 248.25924,412.77896 c -0.80021,1.58936 -2.30632,2.41851 -4.1875,2.84375 1.83391,-1.07919 2.71205,-1.60319 4.1875,-2.84375 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
         <path
            inkscape:connector-curvature="0"
            id="path7141"
-           d="m 224.61587,436.02239 -0.0779,0.73401 1.89062,-0.60055 z"
+           d="m 233.99335,418.35709 -0.0779,0.73401 1.89062,-0.60055 z"
            style="fill:#000000;fill-opacity:1;stroke:none" />
+      </g>
+      <g
+         inkscape:export-ydpi="200.06"
+         inkscape:export-xdpi="200.06"
+         inkscape:export-filename="/Users/viniciusdepizzol/git/BMX/src/bike-parts/body.png"
+         style="fill:#000000;fill-opacity:1"
+         transform="matrix(0.88326484,-0.46887443,0.46887443,0.88326484,-250.93034,123.4046)"
+         id="g7265">
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 205.37163,486.43211 c 5.3215,-9.31679 8.29093,-16.65844 12.53858,-28.3575 2.62648,-7.23396 -5.51375,-11.52612 -12.14214,-8.54593 -10.11996,4.55004 -12.84273,16.14185 -18.64518,26.64302 -4.36423,7.89831 12.96103,19.51805 18.24874,10.26041 z"
+           id="path7267"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 227.42885,434.50807 -0.35327,3.72337 1.5484,2.73771 -1.99604,0.55391 -0.15604,2.14218 -0.22295,2.08443 -7.44108,-2.33634 -1.83143,-9.5791 10.51408,-1.90009 z"
+           id="path7269"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 217.42227,453.65534 c -0.17758,-1.30331 0.52317,-3.26691 1.75981,-5.63339 l -5.57243,-2.96048 c -1.25189,2.09717 -2.51527,4.16555 -4.42202,4.62632 z"
+           id="path7271"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 227.58273,435.75014 -0.37791,2.53448 -3.39798,-0.18916 0.0428,-0.56624 -2.62897,-0.10057 0.55867,-1.15801 2.16459,0.0136 0.0537,-0.70954 z"
+           id="path7273"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="M 225.45712,449.60731 211.9936,446.8434 c -6.41006,-6.63041 -2.07753,-16.84421 2.22955,-18.90238 10.345,-4.94342 15.28069,3.93078 25.58098,1.84998 -4.27042,10.16184 -19.92855,-3.26293 -18.38818,12.93906 l 7.07762,1.5773 1.10424,-1.51589 c 2.99059,2.04644 -0.27743,7.59108 -4.14069,6.81584 z"
+           id="path7275"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 188.0625,474.45593 c -0.30065,0.57956 -0.62013,1.14439 -0.9375,1.71875 -4.36423,7.89831 12.96229,19.50764 18.25,10.25 1.48446,-2.59897 2.77154,-5.03971 3.96875,-7.46875 l -0.59375,-0.21875 -20.6875,-4.28125 z"
+           id="path7277"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 228.50676,444.72551 -7.09375,-1.5625 -0.15625,0.8125 7.09375,1.5 z"
+           id="path7279"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 229.25676,429.28801 c -4.14836,-1.0659 -8.03944,-3.05801 -12.96875,-1.3125 -3.92252,1.3747 -5.02435,4.07678 -6.1875,6.75 3.36968,-8.3367 11.7903,-5.71311 19.15625,-5.4375 z"
+           id="path7281"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 238.88176,430.44426 c -0.80021,1.58936 -2.30632,2.41851 -4.1875,2.84375 1.83391,-1.07919 2.71205,-1.60319 4.1875,-2.84375 z"
+           id="path7283"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 224.61587,436.02239 -0.0779,0.73401 1.89062,-0.60055 z"
+           id="path7285"
+           inkscape:connector-curvature="0" />
       </g>
     </g>
   </g>
