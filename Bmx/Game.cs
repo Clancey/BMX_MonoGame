@@ -60,6 +60,7 @@ namespace GameStateManagement
             Components.Add(screenManager);
 
             // Activate the first screens.
+			ConvertUnits.SetDisplayUnitToSimUnitRatio(10f);
             //
 			screenManager.AddScreen(new BackgroundScreen(), null);
             screenManager.AddScreen(new MainMenuScreen(), null);

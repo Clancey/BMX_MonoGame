@@ -97,6 +97,7 @@
     <Folder Include="AI\" />
     <Folder Include="Animals\" />
     <Folder Include="Physics\" />
+    <Folder Include="Content\Biker\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
@@ -156,6 +157,11 @@
     <Compile Include="Screens\TestScreen.cs" />
     <Compile Include="Screens\Constants.cs" />
     <Compile Include="Screens\Camera.cs" />
+    <Compile Include="Screens\PhysicsGameScreen.cs" />
+    <Compile Include="Screens\Camera2D.cs" />
+    <Compile Include="Screens\ConvertUnits.cs" />
+    <Compile Include="Screens\InputHelper.cs" />
+    <Compile Include="Physics\Border.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GameThumbnail.png" />
@@ -184,6 +190,14 @@
     <Content Include="terrain.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Biker\arm-1.png" />
+    <Content Include="Content\Biker\arm-2.png" />
+    <Content Include="Content\Biker\body.png" />
+    <Content Include="Content\Biker\foot.png" />
+    <Content Include="Content\Biker\frame.png" />
+    <Content Include="Content\Biker\leg-1.png" />
+    <Content Include="Content\Biker\leg-2.png" />
+    <Content Include="Content\Biker\wheel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

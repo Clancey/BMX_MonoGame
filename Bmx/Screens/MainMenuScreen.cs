@@ -58,7 +58,7 @@ namespace GameStateManagement
             foreach (GameScreen screen in ScreenManager.GetScreens())
                 screen.ExitScreen();
 
-			ScreenManager.AddScreen(new TestScreen(), e.PlayerIndex);
+			ScreenManager.AddScreen(new GameplayScreen(), e.PlayerIndex);
         }
 
 

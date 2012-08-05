@@ -65,7 +65,7 @@ namespace GameStateManagement
 			//floor
 			BodyFactory.CreateEdge (_world, new Vector2 (0.0f, simulatedHeight), new Vector2 (simulatedWidth* 2, simulatedHeight));
 
-			ragdoll = new Ragdoll(_world,this,startPos);
+			ragdoll = new Ragdoll(_world,ScreenManager,startPos);
 			
 			Camera.Current.CenterPointTarget = 620f;
 			//Camera.Current.StartTracking (_projectile.Body);
